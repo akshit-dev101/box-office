@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-
+import styled from 'styled-components';
 
 export const CastList = styled.div`
   display: flex;
@@ -32,7 +30,7 @@ export const CastList = styled.div`
 
   .actor {
     margin-left: 25px;
-    
+
     .bold {
       font-weight: bold;
     }

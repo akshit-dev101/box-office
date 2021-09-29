@@ -1,9 +1,9 @@
 import React from 'react';
+
 import IMG_PLACEHOLDER from '../../images/not-found.png';
 import { CastList } from './Cast.styled';
 
-const Cast = ({ cast }) => {
-  return (
+const Cast = ({ cast }) =>(
     <CastList>
       {cast.map(({ person, character, voice }, key) => (
         <div key={key} className="cast-item">
@@ -15,7 +15,7 @@ const Cast = ({ cast }) => {
           </div>
           <div className="actor">
             <span>
-              <span className="bold">{person.name} </span> | {character.name}{' '}
+              <span className="bold">{person.name}</span> | {character.name}{' '}
               {voice ? '| Voice' : ''}
             </span>
           </div>
@@ -23,6 +23,6 @@ const Cast = ({ cast }) => {
       ))}
     </CastList>
   );
-};
+
 
 export default Cast;
